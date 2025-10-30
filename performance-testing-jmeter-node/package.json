@@ -1,0 +1,17 @@
+{
+  "name": "performance-testing-jmeter-node",
+  "version": "1.0.0",
+  "description": "Distributed & Dockerized JMeter Performance Testing for Kurtosys",
+  "scripts": {
+    "test:local": "node scripts/run-local.js",
+    "test:distributed": "node scripts/run-distributed.js",
+    "docker:up": "docker compose -f docker/docker-compose.yml up --build",
+    "docker:down": "docker compose -f docker/docker-compose.yml down"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
